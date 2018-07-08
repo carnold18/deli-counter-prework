@@ -5,9 +5,11 @@ other_deli = [];
 
 def line(katz_deli)
   if katz_deli.length > 0
-   katz_deli.each do |i| 
-     katz_deli.push("The line is currently: #{katz_deli.index(i)+1}. #{i}.")
-   end
+    sentence = "The line is currently: "
+    katz_deli.each_with_index do |name,index| 
+      sentence + "#{index+1} + #{name}"
+      end
+    puts sentence 
   else puts "The line is currently empty."
   end
 end

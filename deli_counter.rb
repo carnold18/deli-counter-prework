@@ -13,13 +13,6 @@ def line(katz_deli)
   end
 end
 
-sentence = "The line is currently: "
-    for i in 0..katz_deli.length-1 
-      line = sentence + "#{i+1}. #{katz_deli[i]}"
-      end
-    puts line 
-
-
 def take_a_number(katz_deli,name)
   katz_deli.push(name)
   puts "Welcome #{name}, you are number #{katz_deli.length} in line."

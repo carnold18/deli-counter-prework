@@ -6,7 +6,7 @@ other_deli = [];
 def line(katz_deli)
   if katz_deli.length > 0
    katz_deli.each do |i| 
-     katz_deli.push("The line is currently: #{i}. #{katz_deli[i]}.")
+     katz_deli.push("The line is currently: #{katz_deli.index(i)+1}. #{i}.")
    end
   else puts "The line is currently empty."
   end

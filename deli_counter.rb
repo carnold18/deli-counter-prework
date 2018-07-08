@@ -6,10 +6,10 @@ other_deli = [];
 def line(katz_deli)
   if katz_deli.length > 0
     sentence = "The line is currently: "
-    katz_deli.each_with_index do |name,index| 
-      sentence << "#{index+1}. #{name}"
+    for i in 0..katz_deli.length-1 
+      line = message + "#{i+1}. #{katz_deli[i]}"
       end
-    puts sentence 
+    puts line 
   else puts "The line is currently empty."
   end
 end
